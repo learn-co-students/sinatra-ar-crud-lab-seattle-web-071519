@@ -1,0 +1,6 @@
+<p> Will you delete <%=@article.title%>? </p>
+<form action="/article/<%@article.id%>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="hidden" name="id" value="<%=@article.id%>">
+    <input type="submit">
+</form>
